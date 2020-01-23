@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css3-animate-it-master/css/animations.css" type="text/css">
+    <title>My Portfolio | Abraham Abi Saab</title>
+</head>
+<body>
+    <header id="home">
+        <span>AbrahamAbiSaab</span>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="hero-container animatedParent">
+        <div class="hero-left animated fadeInLeftShort">
+        <p>Hi, my name is <span class="name">Abraham Abi Saab</span></p>
+        <p>and I'm a <span class="job">Front End Web Developer.</span></p>
+        <button class="work-button"><a href="#work">View My Work</a></button>
+        </div>
+        <div class="hero-right animated fadeInRightShort">
+            <img src="./img/Optimized-portfolio.png" alt="Picture of Abraham Abi Saab">
+        </div>
+    </div>
+    
+    <section id="about" class="about animatedParent">
+        <div class="about-left animated bounceInLeft delay-350">
+            <img src="./img/mystory.svg" alt="Photo of a person reading">
+        </div>
+        <div class="about-right animated bounceInRight delay-350" class="animated bounceInDown">
+            <h1>About Me</h1>
+            <p>I'm an American web developer currently living in Tripoli, Lebanon. I started 
+                    my coding career at the age of 16. The passion grew on me even more, so I 
+                    decided to pursue a web development career. After high school, I went on to 
+                    pursue a Bachelor's degree in Computer Science at Lebanese International 
+                    University.
+                    </p>
+            <p>After acquiring my degree, I needed to make a career choice and I chose to
+                    become a web developer. The joy and motivation towards art and visual 
+                    components helped me make this choice.
+                    </p>
+            <p>I'm always motivated to learn more technologies and enhance my skills. Doing 
+                    the things you love is the best gift life can give you and I mean to invest this gift 
+                    the most.
+                    </p>      
+                    
+                    
+        </div>
+    </section>
+    <section id="work" class="work animatedParent">
+        <div class="work-left animated growIn delay-300">
+            <img src="./img/whatsupdoc.png" alt="What's Up Doc?">
+            <span>What's Up Doc?</span>
+            <a href="./whatsupdoc.html"><button onclick="whatsupdoc.html" class="work-button">Details</button></a>
+        </div>
+        <div class="work-right animated growIn delay-300">
+                <img src="./img/invoice.png" alt="Invoice">
+                <span>Inventory Management <br>System</span>
+                <a href="./inventorysystem.html"><button class="work-button">Details</button></a>
+            </div>
+    </section>
+    <section id="contact" class="contact animatedParent">
+        <div class="contact-left animated bounceInLeft delay-400">
+            <h1>Contact Me</h1>
+            <div class="email"><img src="./img/gmail.svg" alt="Gmail Icon">
+            <span>abrahamabisaab97@gmail.com</span></div>
+            <div class="linkedin"><img src="./img/linkedin.svg" alt="LinkedIn Icon">
+            <span>Abraham Abi Saab</span></div>
+            <div class="github"><img src="./img/github.svg" alt="Github Icon">
+            <span>github.com/abrahamabisaab</span></div>
+        </div>
+        <div class="contact-right animated bounceInRight delay-400">
+            <img src="./img/contact.svg" alt="Contact Me Photo">
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./css3-animate-it-master/css3-animate-it-master/js/css3-animate-it.js"></script>
+</body>
+</html>

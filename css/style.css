@@ -1,0 +1,911 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    padding-left: 5%;
+}
+
+header span{
+    font-weight: 700;
+    font-size: 1.2em;
+    flex: 0.9;
+}
+
+nav ul{
+    display: flex;
+} 
+
+nav ul li{
+    list-style: none;
+    padding-right: 8em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.hamburger{
+    display: none;
+}
+.hamburger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    cursor: pointer;
+    background-color:black;
+    transition: all 0.3s ease;
+}
+
+.hero-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        height: 92vh;
+        padding-left: 3%;   
+}
+
+.name{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.hero-left p{
+    font-size:1.3em;
+    text-align: left;
+}
+
+.job{
+    color: #2F89FC;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.work-button{
+    background-color: #2F89FC;
+    color: white;
+    border: none;
+    font-size: 1.3em;
+    padding: 1rem;
+    margin-top: 5%;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+
+.work-button a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero-left{
+    justify-self: center;
+    align-self: center; 
+    text-align: center;  
+}
+
+.hero-right{
+    justify-self: end;
+    align-self: end;
+}
+
+.hero-right img{
+    height: 450px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 5em;
+    height: 88vh;
+    padding: 3%;
+    background-color: #F2F2F2;
+}
+
+.about-left img{
+    height: 350px;  
+}
+
+.about-left{
+    justify-self: center;
+    align-self: start;
+}
+
+.about-right{
+    justify-self: center;
+    align-self: start;
+    font-size: 1em;
+
+}
+.about-right h1{
+    margin-bottom: 5%;
+    letter-spacing: 0.1em;
+}
+.about-right p{
+    display: block;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    height: 88vh;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.work-left img{
+    display: block;
+    height: 270px;
+}
+.work-left span{
+    display: block;
+    font-weight: 700;
+    padding: 0.5em;
+    margin-top: 5%;
+}
+.work-left{
+    justify-self: center;
+    align-self: center;
+}
+
+.work-left button{
+    width: 50%;
+}
+
+.work-right img{
+    display: block;
+    height: 270px;
+}
+.work-right span{
+    display: block;
+    font-weight: 700;
+    padding: 0.5em;
+    margin-top: 5%;
+    
+}
+.work-right{
+    justify-self: center;
+    align-self: center;   
+}
+
+.work-right button{
+    width: 50%;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 88vh;
+    padding: 3%;
+    text-align: left;
+    background-color: #f2f2f2;
+    line-height: 4em;
+}
+
+.contact-left{
+    justify-self: center;
+    align-self: center;
+}
+.contact-right img{
+    height: 350px;
+}
+.contact-right{
+    justify-self: center;
+    align-self: center;
+}
+
+.contact-left h1{
+    margin-bottom: 5%;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.contact-left span{
+    font-size: 1.4em;
+}
+
+.information{
+    display: grid;
+    grid-template-rows: 1fr, 2fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 1.5em;
+    grid-column-gap: 2em;
+    margin: 3% 3% 3% 3%;
+}
+.information h1{
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+
+.information p{
+    font-size: 1em;
+}
+
+.main {
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.main img{
+    height: 370px;
+  
+}
+.maininventory{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.maininventory img{
+    height: 270px;
+  
+}
+@media only screen and (min-width: 2400px){
+    header span{
+        font-size: 2em;
+        flex: 0.9;
+    }
+
+    nav ul li{
+        list-style: none;
+        padding-right: 15em;
+    }
+    
+    nav ul li a{
+        font-size: 1.8em;
+    }
+
+    .job{
+        font-size: 1.9em;
+    }
+    
+    .name{
+        font-size: 1.8em;
+    }
+
+    .hero-container p{
+        font-size: 1.9em;
+    }
+
+    .work-button{
+        font-size: 1.9em;
+    }
+    
+    .hero-right img{
+        height: 650px;
+    }
+
+    .about-left img{
+        height: 450px;
+    }
+
+    .about-right h1{
+        font-size: 2em;
+    }
+
+    .about-right p{
+        font-size: 1.7em;
+    }
+
+    .work-left img{
+        height: 350px;
+    }
+
+    .work-left span{
+        font-size: 1.9em;
+    }
+
+    .work-left button{
+        width: 55%;
+        margin-top: 1%;
+    }
+    
+    .work-right img{
+        height: 350px;
+        margin-left: 15%;
+    }
+
+    .work-right span{
+        font-size: 1.9em;
+    }
+
+    .work-right button{
+        margin-top: 1%;
+    }
+
+    .contact-right img{
+        height: 450px;
+    }
+
+    .contact-left h1{
+        font-size: 2.5em;
+    }
+    
+    .contact-left span{
+        font-size: 2em;
+    }
+    
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 2399px){
+    header span{
+        font-size: 1.4em;
+    }
+
+    nav ul li{
+        list-style: none;
+        padding-right: 8em;
+    }
+    
+    nav ul li a{
+        font-size: 1.4em;
+    }
+
+    .job{
+        font-size: 2.1em;
+    }
+    
+    .name{
+        font-size: 2.2em;
+    }
+
+    .hero-container p{
+        font-size: 1.3em;
+    }
+
+    .work-button{
+        font-size: 1.3em;
+    }
+
+    .hero-right img{
+        height: 550px;
+    }
+
+    .about-left img{
+        height: 370px;
+    }
+
+    .about-right p{
+        font-size: 1.1em;
+    }
+
+    .work-left span, .work-right span{
+        font-size: 1.3em;
+    }
+    
+.information h1{
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+
+.information p{
+    font-size: 1.2em;
+}
+.main img{
+    height: 400px;
+}
+.maininventory img{
+    height: 400px;
+  
+}  
+}
+  @media screen and (min-width: 860px) and (max-width: 1200px) {
+    header span{
+        flex: 0.9;
+    }
+
+    nav ul li{
+        padding-right: 5em;
+    }
+
+    .hero-left p{
+        font-size:1em;
+    }
+    .job{
+        
+        font-size: 1.2em;
+    }
+    
+    .name{
+        font-size: 1.2em;
+    }
+
+    .hero-right img{
+        height: 400px;
+    }
+
+    .hero-container{
+        padding-left: 1%;
+    }
+
+    .hero-container p{
+        font-size: 1.1em;
+    }
+    .about-left img{
+        height: 300px;
+    }
+
+    .about-right p{
+        font-size: 1em;
+    }
+    .about{
+        padding-top: 5%;
+    }
+
+    .work{
+        padding-top: 5%;
+    }
+    .work-left{
+        align-self: start;
+    }
+
+    .work-left img{
+        height: 230px;
+    }
+
+    .work-right{
+        align-self: start;
+    }
+
+    .work-right img{
+        height: 230px;
+    }
+
+    .contact-right img{
+        height: 300px;
+    }
+
+    .contact-left span{
+        font-size: 1.2em;
+    }
+    
+  .information h1{
+    font-size: 1.1em;
+    margin-bottom: 3%;
+}
+
+.information p{
+    font-size: 0.8em;
+}
+.information ul li{
+    font-size: 0.8em;
+}
+
+.main img{
+    height: 350px;
+}
+.maininventory img{
+    height: 230px;
+  
+}
+  }
+
+
+ @media screen and (min-width: 769px) and (max-width: 859px) {
+    header span{
+        flex: 0.9;
+    }
+
+    .hero-left{
+        z-index: 1;
+    }
+
+    nav ul li{
+        padding-right: 4em;
+    }
+
+    .hero-left p{
+        font-size:0.7em;
+    }
+    .job{
+        
+        font-size: 0.9em;
+    }
+    
+    .name{
+        font-size: 1em;
+    }
+
+    .hero-right img{
+        height: 370px;
+    }
+
+    .hero-container{
+        padding-left: 1%;
+    }
+
+    .hero-container p{
+        font-size: 1.1em;
+    }
+
+    .about-right p{
+        font-size: 0.8em;
+    }
+    .about-right{
+        margin-bottom: 10%;
+    }
+
+    .work-button{
+        font-size: 1em;
+    }
+
+    .work-left{
+        align-self: start;
+    }
+
+    .about{
+        padding-top: 5%;
+    }
+
+    .work{
+        padding-top: 5%;
+    }
+
+    .about-left img{
+        height: 230px;
+    }
+
+    .work-left img{
+        height: 200px;
+    }
+
+    .work-left span{
+        font-size: 0.8em;   
+    }
+
+    .work-right span{
+        font-size: 0.8em;   
+    }
+
+    .work-right{
+        align-self: start;
+    }
+
+    .work-right img{
+        height: 200px;
+    }
+
+    .contact-right img{
+        height: 250px;
+    }
+    .contact-right{
+        margin-bottom: 10%;
+    }
+
+    .contact-left span{
+        font-size: 1.1em;
+    }
+
+    .information h1{
+        font-size: 1em;
+        margin-bottom: 3%;
+    }
+    
+    .information p{
+        font-size: 0.8em;
+    }
+    .information ul li{
+        font-size: 0.8em;
+    }
+    .main img{
+        height: 320px;
+    }
+    .maininventory img{
+        height: 200px;
+      
+    }
+  }
+
+  
+
+@media screen and (max-width:768px){
+ 
+
+    header span{
+        font-size: 1em;
+    }
+
+    .hero-container{
+        margin-top: 3%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        padding-left: 0;
+    }
+
+    .name{
+        font-size: 1.2em;
+    }
+    
+    .hero-left p{
+        font-size:1em;
+        text-align: left;
+    }
+    
+    .job{
+        font-size: 1.3em;
+    }
+    
+    .work-button{
+        font-size: 1em;
+        padding: 0.8rem;
+    }
+    
+    .hero-right{
+        justify-self: center;
+        align-self: end;
+    }
+    
+    .hero-right img{
+        height: 300px;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        padding: 3% 5%;
+    }
+
+    .about-left img{
+        height: 150px;
+    }
+
+    .about-right{
+        justify-self: center;
+        align-self: start;
+        margin-bottom: 5%;
+        font-size: 0.9em;
+    
+    }
+    .about-right h1{
+        margin-bottom: 3%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .about-right p{
+        font-size: 0.7em;
+    }
+    .work-left img{
+        height: 150px;
+    }
+
+    .work-left span{
+        font-size: 0.8em;
+    }
+
+    .work-right img{
+        height: 150px;
+    }
+
+    .work-right span{
+        font-size: 0.8em;
+        margin-top: 0;
+    }
+
+    .work-right button{
+        margin-top: 0;
+    }
+
+    .contact{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        line-height: 3em;
+
+    }
+    .contact-right{
+        grid-row: 1/2;
+    }
+
+    .contact-right img{
+        height: 150px;
+    }
+    
+    .contact-left h1{
+        margin-bottom: 5%;
+        font-size: 1.2em;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+    
+    .contact-left span{
+        font-size: 1em;
+        align-self: start;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    .information{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-row-gap: auto;
+        text-align: center;
+    }
+
+    .main img{
+        height: 270px;
+    }
+    .maininventory img{
+        height: 180px;
+      
+    }
+    nav ul li{
+        margin: 15%;
+        padding-right: 0;
+        opacity: 0;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        width: 50%;
+        top: 8vh;    
+        background-color: #F2F2F2;
+        flex-direction: column;
+        z-index: 1;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }    
+
+    .toggle .line2{
+        opacity: 0;
+    }    
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }    
+
+}
+
+@media screen and (max-width:450px){
+   
+    .name{
+        font-size: 1em;
+    }
+    
+    .hero-left p{
+        font-size:1em;
+        text-align: left;
+    }
+    
+    .job{
+        font-size: 1em;
+    }
+    
+    .work-button{
+        font-size: 1em;
+        padding: 0.8rem;
+    }
+  
+    .hero-right img{
+        height: 275px;
+    }
+
+    .about-left img{
+        height: 110px;
+        margin-top: 30%;
+    }
+
+    .about-right{
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 15%;
+    
+    }
+    .about-right h1{
+        margin-bottom: 3%;
+        font-size: 1.1em;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+    .about-right p{
+        display: block;
+        font-size: 0.65em;
+    }
+
+    .work{
+        grid-template-columns: 1.5fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .work-left img{
+        height: 110px;
+    }
+
+    .work-left span{
+        font-size: 0.6em;
+    }
+
+    .work-right img{
+        height: 110px;
+    }
+
+    .work-left button a{
+        font-size: 0.7em;
+    }
+    .work-right span{
+        font-size: 0.6em;
+    }
+
+    .work-left button{
+        margin-top: 0;
+        width: 5.5em;
+    }
+
+    .work-right button{
+        margin-top: 0;
+        width: 5.5em;
+    }
+
+    .contact{
+        line-height: 2.2em;
+        padding: 0;
+    }
+    .contact-left{
+        margin-bottom: 10%;
+    }
+    .contact-right img{
+        height: 130px;
+    }
+    
+    .contact-left h1{
+        font-size: 1.1em;
+    }
+    
+    .contact-left span{
+        font-size: 1em;
+    }
+    .information h1{
+        font-size: 0.9em;
+    }
+    .information p{
+        font-size: 0.7em;
+    }
+    .information ul li{
+        font-size: 0.7em;
+    }
+    .main img{
+        height:170px
+    }
+    .maininventory img{
+        height: 150px;
+      
+    }
+}
