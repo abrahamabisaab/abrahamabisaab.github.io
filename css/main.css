@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    color: white;
+    background-color: #000004;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:link,a:focus,a:visited{
+    text-decoration: none;
+    color: white;
+
+}
+.container{
+    background: url("/img/silhouette_stars_light_143216_938x1668.jpg") no-repeat;    
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero__section{
+    padding-top: 3%;
+}
+
+.navigation{
+    margin: 0 auto;
+    width: 90%;
+    padding: .7em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav__list{
+    display: none;
+    font-weight: 700;
+    margin-right: 10%;
+    list-style: none;
+}
+
+.nav__links{
+    margin:0 2em;
+}
+
+.hamburger{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    height: 20px;
+    width: 35px;
+
+}
+
+.hero__text{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.welcome{
+    font-family: 'Allura', cursive;
+    font-size: 2.5em;
+}
+
+.hero__title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero__paragraph{
+    font-size: .9em;
+    margin-bottom: 1.5em;
+}
+
+.hero__button{
+    padding: .8em 2em;
+    color: white;
+    background-color: #742b88;
+    border: none;
+    border-radius: .5em;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 2em;
+}
+
+.hero__subbutton{
+    padding: .8em 1.3em;
+    color: white;
+    background-color:  #605985;
+    border: none;
+    border-radius: .5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects__section{
+    text-align: center;
+}
+
+.subsection{
+    background-color: #313131;
+    width: 90%;
+    margin: 10% auto;
+    border-radius: .5em;
+    padding: 1em .5em 2em .5em;
+ 
+}
+
+.skills{
+    padding: .3em .7em;
+    color: white;
+    background-color: #525252;
+    border: none;
+    border-radius: .5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project__description{
+    font-size: .9em;
+}
+
+.live__demo{
+    padding: .8em 1.6em;
+    color: white;
+    background-color: #742b88;
+    border: none;
+    border-radius: .5em;
+    margin-right: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.source__code{
+    padding: .8em 1.1em;
+    color: white;
+    background-color: #525252;
+    border: none;
+    border-radius: .5em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.about__me{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;  
+    position: relative;
+}
+
+.aboutme__text{
+    font-size: 1em;
+    background-color: #313131;
+    border-radius: .5em;
+    font-size: .9em;
+    margin: 5% 0;
+    padding: 2em 1em 2em 1em; 
+}
+
+.project__main{
+    position: relative;
+}
+.line,.line2{
+    position: absolute;
+    bottom: -2%;
+    left: 15%;
+    border: 4px solid #742b88;
+    border-radius: .5em;
+    width: 70%;
+}
+
+.line2{
+    bottom: -6%;
+    width: 75%;
+    left: 12.5%;
+}
+.icons img{
+    height: 30px;
+    width: 30px;
+    margin: 0 .5em;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #605985;
+  }
+
+footer{
+    width: 100%;
+    background-color: #525252;
+
+}
+.responsive{  
+    position: absolute;
+    box-shadow: 3px 4px 9px 0px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 3px 4px 9px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 3px 4px 9px 0px rgba(0,0,0,0.52);
+    padding: 1em 0;
+    background-color: #525252;
+    top:0;
+    margin: 3em auto;
+    width: 90%;
+    border-radius: .5em;
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    .container{
+    height: 110vh;
+    background: url('/img/silhouette_stars_light_143216_800x1200.jpg') no repeat;
+    }
+
+    .navigation{
+        width: 80%;
+    }
+
+    .hero__section{
+        margin-top: 10%;
+    }
+
+    .welcome{
+        font-size: 3em;
+    }
+
+    .hero__text{
+        width: 85%;
+    }
+
+    .hero__title{
+        font-size: 2.5em;
+    }
+
+    .hero__paragraph{
+        font-size: 1em;
+    }
+
+    .hero__button{
+        padding: 1em 2.5em;
+    }
+    
+    .hero__subbutton{
+        padding: 1em 1.5em;
+    }
+
+   .section__title{
+       font-size: 2em;
+    }
+
+   .subsection{
+       width: 85%;
+    }
+
+   .project__description{
+       font-size: 1em;
+   } 
+
+   .aboutme__text{
+       font-size: 1em;
+   }
+
+   .aboutme__title{
+       font-size: 2em;
+   }
+
+   .icons img{
+    height: 40px;
+    width: 40px;
+   }
+
+   .about__me{
+       width: 85%;
+   }
+}
+
+@media screen and (min-width:1200px) {
+    .navigation{
+        width: 97%;
+    }
+    
+    .container{
+        background: url('/img/silhouette_stars_light_143216_1366x768.jpg') no-repeat;
+        height: 100vh;
+    }
+
+    .subsection{
+        width: 90%;
+        height: 440px;
+    }
+    .project__main{
+        display: flex;
+    }
+
+.projects__section{
+    width: 30%;
+    margin: 3% auto 3% auto;
+}
+.skills{
+    margin-top: .3em;
+}
+.about__me{
+    width: 97%;
+    text-align: left;
+}
+.line{
+    left: 1.5%;
+    width: 12%;
+    bottom: -5%;
+}
+
+.line2{
+    bottom: -10%;
+}
+#myBtn{
+    padding: 1.5em;
+    bottom: 1.5em;
+    right: 1em;
+}
+.live__demo:nth-child(1){
+    margin-right: 0;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav__list{
+    display: flex;
+}
+
+@media screen and (min-width:1920px){
+    .container{
+        background: url('/img/silhouette_stars_light_143216_1920x1080.jpg') no-repeat;
+    }
+
+    .logo__text{
+        font-size: 2em;
+    }
+    .nav__links{
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    .welcome{
+        font-size: 5em;
+        
+    }
+    .hero__title{
+        font-size: 4em;
+    }
+    .hero__paragraph{
+        font-size: 1.5em;
+    }
+    .hero__button,.hero__subbutton{
+        font-size: 1.5em;
+    }
+    .hero__section{
+        margin-top: 11em;
+    }
+    .project__title{
+        font-size: 1.6em;
+    }
+    .skills{
+        font-size: 1.2em;
+    }
+    .project__description{
+        font-size: 1.1em;
+    }
+    .live__demo,.source__code{
+        font-size: 1.1em;
+    }
+    .line{
+        width:10%;
+    }
+    .aboutme__title{
+        font-size: 2.5em;
+    }
+    .aboutme__text{
+        font-size: 1.3em;
+    }
+}
+}
+
